@@ -4,6 +4,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cyanogen_hero.mk \
     $(LOCAL_DIR)/cyanogen_heroc.mk \
     $(LOCAL_DIR)/cyanogen_sholes.mk \
+    $(LOCAL_DIR)/cyanogen_umts_sholes.mk \
     $(LOCAL_DIR)/cyanogen_dream_sapphire.mk \
     $(LOCAL_DIR)/cyanogen_bravo.mk \
     $(LOCAL_DIR)/cyanogen_espresso.mk \
