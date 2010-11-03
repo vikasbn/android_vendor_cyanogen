@@ -123,6 +123,8 @@ $SED -i \
 mv -f $REPACK/ota/system/bin/sh $REPACK/ota/system/bin/sh.bin
 
 # Location Proxy injection
+printf "Injecting smali..."
+(
 SMALID=$OUT/smali.d
 rm -rf $SMALID
 mkdir -p $SMALID
@@ -135,7 +137,7 @@ java -Xmx512m \
 	-jar $ANDROID_BUILD_TOP/vendor/cyanogen/tools/smali.jar framework -o classes.dex
 zip $QUIET $REPACK/ota/system/framework/framework.jar "classes.dex"
 rm -f classes.dex
-unzip $REPACK/ota/system/framework/services.jar "classes.dex"
+unzip $QUIET $REPACK/ota/system/framework/services.jar "classes.dex"
 java -Xmx512m \
 	-jar $ANDROID_BUILD_TOP/vendor/cyanogen/tools/baksmali.jar classes.dex -o services
 cp -fr $ANDROID_BUILD_TOP/device/motorola/umts_sholes/smali/services/* services
@@ -155,6 +157,7 @@ java -Xmx512m \
 	-jar $ANDROID_BUILD_TOP/vendor/cyanogen/tools/smali.jar services -o classes.dex
 zip $QUIET $REPACK/ota/system/framework/services.jar "classes.dex"
 rm -rf $SMALID
+)
 
 # Delete unnecessary binaries
 ( cd $REPACK/ota/system/bin; echo $DELETE_BINS | xargs rm -f; )
