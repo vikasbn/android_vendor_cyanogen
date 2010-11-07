@@ -158,6 +158,7 @@ java -Xmx512m \
 zip $QUIET $REPACK/ota/system/framework/services.jar "classes.dex"
 rm -rf $SMALID
 )
+echo
 
 # Delete unnecessary binaries
 ( cd $REPACK/ota/system/bin; echo $DELETE_BINS | xargs rm -f; )
