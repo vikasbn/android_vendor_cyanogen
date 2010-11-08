@@ -119,9 +119,6 @@ $SED -i \
 	-e '/ro\.build\.type/s/eng/user/' \
 	$REPACK/ota/system/build.prop
 
-# Sh Hijack
-mv -f $REPACK/ota/system/bin/sh $REPACK/ota/system/bin/sh.bin
-
 # Location Proxy injection
 printf "Injecting smali..."
 (
