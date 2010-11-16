@@ -160,6 +160,9 @@ rm -rf $SMALID
 )
 echo
 
+# Include prebuilt boot.img
+cp $ANDROID_BUILD_TOP/vendor/motorola/umts_sholes/proprietary/boot.img $REPACK/ota/
+
 # Delete unnecessary binaries
 ( cd $REPACK/ota/system/bin; echo $DELETE_BINS | xargs rm -f; )
 
