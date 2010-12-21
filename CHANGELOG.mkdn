@@ -17,8 +17,9 @@ Maintainers:
 * Hero: Lox (GSM), Darchstar (CDMA)
 * Desire (GSM/CDMA): Kali-, Defer
 * Incredible: Koush
-* Espresso (Slide): Wes Garner, Chris Soyars, Cyanogen
 * Supersonic (EVO): Cyanogen, toastcfh
+* Espresso (Slide): Cyanogen, Wes Garner
+* Liberty (Aria): attn1, jznomoney
 * Legend: Alexander Hofbauer
 * Vision (G2/Desire Z): Cyanogen
 * Geeksphone ONE: arcee
@@ -38,10 +39,22 @@ Translators:
 * Russian: OlegKrikun, Pavel Volkov
 * Portuguese: Eduardo Martins
 * Spanish: PeRiJeY, KalimochoAz
-
+* Catalan: Oriol Pellicer
 
 CHANGELOG
 ---------
+### 6.1.1
+* Common: Add rotary lockscreen - Kmobs/Robert Burns
+* Common: Updated translations - (everyone)
+* Common: Push update notificatiosn - Chris Soyars
+* Common: Fix camera sounds - CAF/Cyanogen/mtwebster
+* N1/DS/Supersonic/Bravo(c): Kernel performance tweaks and fixes (various)
+* N1: Update build fingerprint
+* Vision: Fix MMS over WiFi calling - Zinx
+* Vision: Add console=null to kernel command line - Adam Tygart
+* Vision: Kernel to 2.6.32.27 and some performance tweaks
+* Droid: FRG83D fingerprint, translations, camera, torch fixes
+
 ### 6.1.0
 * Common: Update to Android 2.2.1
 * Common: Various bugfixes from AOSP and CodeAurora
