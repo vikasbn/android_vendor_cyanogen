@@ -47,10 +47,9 @@ PRODUCT_PACKAGES += \
 #    CMWallpapers \
 #    DSPManager
 
-# Enable FM radio if supported
-#ifeq ($(BOARD_HAVE_FM_RADIO), true)
-#    PRODUCT_PACKAGES += FM
-#endif
+# Extra tools in CyanogenMod
+PRODUCT_PACKAGES += \
+    openvpn
 
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
@@ -92,6 +91,10 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES +=  \
     vendor/cyanogen/proprietary/RomManager.apk:system/app/RomManager.apk \
+
+# Enable SIP+VoIP on all targets
+PRODUCT_COPY_FILES += \
+    frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
 # Always run in insecure mode, enables root on user build variants
 #ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
