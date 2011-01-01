@@ -39,11 +39,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # CyanogenMod specific product packages
 PRODUCT_PACKAGES += \
-    FileManager
-#    CMParts \
-#    CMPartsHelper \
-#    CMStats \
-#    CMUpdateNotify \
+    FileManager \
+    CMParts \
+    CMStats \
+    CMUpdateNotify
 #    CMWallpapers \
 #    DSPManager
 
@@ -85,8 +84,8 @@ PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/common/xbin/powertop:system/xbin/powertop \
     vendor/cyanogen/prebuilt/common/xbin/openvpn-up.sh:system/xbin/openvpn-up.sh
 
-#PRODUCT_COPY_FILES += \
-#    vendor/cyanogen/prebuilt/common/etc/init.d/05mountsd:system/etc/init.d/05mountsd
+PRODUCT_COPY_FILES += \
+    vendor/cyanogen/prebuilt/common/etc/init.d/05mountsd:system/etc/init.d/05mountsd
 #    vendor/cyanogen/prebuilt/common/etc/init.d/10apps2sd:system/etc/init.d/10apps2sd
 
 PRODUCT_COPY_FILES +=  \
