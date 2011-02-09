@@ -88,6 +88,7 @@ cd $REPACK/ota/system/app
 rm -f CMStats.apk
 rm -f CMUpdateNotify.apk
 rm -f RomManager.apk
+rm -f DSPManager.apk
 find ./ -name \*.apk | $XARGS $OPTICHARGER
 )
 
