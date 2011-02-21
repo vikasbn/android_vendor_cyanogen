@@ -1,8 +1,8 @@
 # Inherit AOSP device configuration for encore.
-$(call inherit-product, device/bn/encore/device_encore.mk)
+$(call inherit-product, device/bn/encore/encore.mk)
 
 # Inherit some common cyanogenmod stuff.
-$(call inherit-product, vendor/cyanogen/products/common.mk)
+$(call inherit-product, vendor/cyanogen/products/common_full.mk)
 
 #
 # Setup device specific product configuration.
@@ -12,7 +12,7 @@ PRODUCT_BRAND := bn
 PRODUCT_DEVICE := encore
 PRODUCT_MODEL := NookColor
 PRODUCT_MANUFACTURER := bn
-PRODUCT_BUILD_PROP_OVERRIDES += BUILD_ID=FRG83 BUILD_DISPLAY_ID=GRH78C PRODUCT_NAME=encore BUILD_FINGERPRINT=google/passion/passion/mahimahi:2.2.1/FRG83/60505:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.2.1 FRG83 60505 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=encore BUILD_ID=FRG83D BUILD_DISPLAY_ID=GRH78C BUILD_FINGERPRINT=google/passion/passion/mahimahi:2.2.1/FRG83D/75603:user/release-keys PRIVATE_BUILD_DESC="passion-user 2.2.1 FRG83D 75603 release-keys"
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/encore
 
