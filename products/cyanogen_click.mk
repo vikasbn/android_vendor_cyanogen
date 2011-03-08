@@ -7,6 +7,9 @@ $(call inherit-product, vendor/cyanogen/products/common_full.mk)
 # Include GSM stuff
 $(call inherit-product, vendor/cyanogen/products/gsm.mk)
 
+# Broadcom FM radio
+$(call inherit-product, vendor/cyanogen/products/ti_fm_radio.mk)
+
 # Build kernel
 PRODUCT_SPECIFIC_DEFINES += TARGET_PREBUILT_KERNEL=device/htc/click/kernel
 
@@ -36,9 +39,9 @@ ifdef CYANOGEN_NIGHTLY
 else
     ifdef CYANOGEN_RELEASE
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.0.0-RC1-click
+            ro.modversion=CyanogenMod-7.0.0-RC2-click
     else
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-RC1-click-KANG
+            ro.modversion=CyanogenMod-RC2-click-KANG
     endif
 endif

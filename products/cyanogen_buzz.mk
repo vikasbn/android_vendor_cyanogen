@@ -32,6 +32,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Add the Torch app
 PRODUCT_PACKAGES += Torch
 
+# Broadcom FM radio
+$(call inherit-product, vendor/cyanogen/products/bcm_fm_radio.mk)
+
 # Enable Windows Media
 WITH_WINDOWS_MEDIA := true
 
@@ -47,9 +50,9 @@ ifdef CYANOGEN_NIGHTLY
 else
     ifdef CYANOGEN_RELEASE
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.0.0-RC1-buzz
+            ro.modversion=CyanogenMod-7.0.0-RC2-buzz
     else
         PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.0.0-RC1-buzz-KANG
+            ro.modversion=CyanogenMod-7.0.0-RC2-buzz-KANG
     endif
 endif
