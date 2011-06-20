@@ -10,6 +10,7 @@ then
   mount -o bind /data/local/download /cache/download
 fi
 
-rm /cache/downloadfile*.apk
+rm /cache/downloadfile*.apk >/dev/null 2>&1
+rm /cache/download/downloadfile*.apk >/dev/null 2>&1
 
 exit 0
