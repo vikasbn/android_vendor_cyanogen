@@ -31,7 +31,7 @@ ifdef CYANOGEN_NIGHTLY
         ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-Milestone
 else
     PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-7.1.0-RC9-$(shell date +%y.%m.%d)-Milestone
+        ro.modversion=CyanogenMod-7.1.0-RC10-$(shell date +%y.%m.%d)-Milestone
 endif
 
 PRODUCT_BUILD_PROP_OVERRIDES := BUILD_ID=R.U.R.1920 BUILD_DISPLAY_ID=R.U.R.1920 PRODUCT_NAME=umts_sholes TARGET_DEVICE=umts_sholes BUILD_FINGERPRINT=MOTO_RTEU/umts_sholes/umts_sholes/sholes:2.2.1/SHOLS_U2_05.26.3/296482885:user/release-keys PRODUCT_BRAND=MOTO_RTEU PRIVATE_BUILD_DESC="umts_sholes-user 2.2.1 SHOLS_U2_05.26.3 296482885 release-keys" BUILD_NUMBER=296482885 BUILD_UTC_DATE=1295422848 TARGET_BUILD_TYPE=user BUILD_VERSION_TAGS=release-keys USER=android-build
