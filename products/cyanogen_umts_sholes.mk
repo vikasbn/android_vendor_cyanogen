@@ -43,6 +43,6 @@ WITH_WINDOWS_MEDIA := true
 
 PRODUCT_COPY_FILES +=  \
     vendor/cyanogen/prebuilt/hdpi/media/bootanimation.zip:system/media/bootanimation.zip \
-    vendor/cyanogen/prebuilt/umts_sholes/versionBeacon:system/versionBeacon
+    vendor/cyanogen/prebuilt/umts_sholes/cm4mmupdater.apk:system/app/cm4mmupdater.apk
 
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/umts_sholes
