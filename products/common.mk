@@ -44,6 +44,8 @@ PRODUCT_PACKAGES += \
     CMStats \
     CMUpdateNotify \
     CMWallpapers \
+    CMScreenshot \
+    screenshot \
     DSPManager \
     FileManager \
     Superuser
