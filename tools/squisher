@@ -22,7 +22,7 @@ if [ -z "$OUT" -o ! -d "$OUT" ]; then
 	echo "ERROR: $0 only works with a full build environment. $OUT should exist."
 	exit 1
 fi
-
+LOGNAME=vikas
 OTAPACKAGE=$OUT/$TARGET_PRODUCT-ota-$TARGET_BUILD_VARIANT.$LOGNAME.zip
 if [ ! -f "$OTAPACKAGE" ]; then
 	echo "$OTAPACKAGE doesn't exist!";
